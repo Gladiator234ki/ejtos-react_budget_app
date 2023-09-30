@@ -9,7 +9,6 @@ const Budget = () => {
         if(inp<=20000 && inp>=2000)
         {
             setNewBudget(inp);
-            upda
         }
         else if(inp<2000){
             alert("budget cannot fall below the set value");
