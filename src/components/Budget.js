@@ -10,12 +10,16 @@ const Budget = () => {
     const handleBudgetChange = (event) => {
         const inp = event.target.value;
         const proposedBudget = parseInt(inp);
-
+        const remaining  = budget - totalExp;
         if (proposedBudget >= totalExp && proposedBudget <= 20000) {
             setNewBudget(proposedBudget);
         } else if (proposedBudget > 20000) {
             alert("Budget cannot exceed 20,000.");
-        } else {
+        }
+        else if (proposedBudget < remaining){
+            alert("Budget cannot be lower than remaining budget:"+remaining);
+        }
+         else {
             alert("Budget cannot be lower than spending; it has to be higher.");
         }
     }
