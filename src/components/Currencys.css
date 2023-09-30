@@ -1,0 +1,18 @@
+.currency-dropdown {
+    background-color: green; /* Set the background color to green */
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.currency-select {
+    background-color: inherit; /* Inherit the parent's background color (green) */
+    color: white; /* Set the text color to white */
+    border: none;
+    cursor: pointer;
+}
+
+.currency-select:hover {
+    background-color: white; /* Change the background color to white on hover */
+    color: green;
+}
